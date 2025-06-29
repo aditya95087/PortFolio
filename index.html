@@ -124,9 +124,7 @@
           />
         </div>
         
-        <div class="background" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-
-          <!-- Left Circular Image -->
+        <!-- <div class="background" style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
           <img src="adi 2.png" alt="Aditya's photo" style="
             width: 40%;
             max-width: 700px;
@@ -140,7 +138,53 @@
             padding: 0;         /* NO padding */
             flex-shrink: 0;
             display: block;     /* Remove inline gaps */
-          ">
+          "> -->
+
+
+          <style>
+            .background {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: flex-start;
+              justify-content: center;
+              gap: 20px;
+              padding: 20px;
+            }
+          
+            .profile-img {
+              width: 100%;
+              max-width: 300px;
+              aspect-ratio: 1 / 1;
+              border-radius: 50%;
+              object-fit: cover;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+              margin-top: 40px;
+              flex-shrink: 0;
+            }
+          
+            /* For larger screens (like desktops) */
+            @media (min-width: 768px) {
+              .profile-img {
+                max-width: 400px;
+                margin-left: 0;
+                margin-right: 0;
+              }
+            }
+          
+            /* For extra large screens */
+            @media (min-width: 1200px) {
+              .profile-img {
+                max-width: 500px;
+                margin-left: 0;
+                margin-right: 100px;
+              }
+            }
+          </style>
+          
+          <div class="background">
+            <img src="adi 2.png" alt="Aditya's photo" class="profile-img">
+          </div>
+          
         
           <!-- Right Text Content -->
           <div style="flex: 1; min-width: 250px; padding-left: 20px;">
